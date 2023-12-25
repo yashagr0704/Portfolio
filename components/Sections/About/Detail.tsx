@@ -20,7 +20,6 @@ import {
   SiReact,
   SiNextDotJs,
   SiNodeDotJs,
-  SiExpress,
   SiTailwindcss,
   SiMysql
 } from 'react-icons/si'
@@ -110,7 +109,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiExpress} color={emphasis} fontSize="2em" />
+            <ListIcon color={emphasis} fontSize="2em" />
             Express
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">

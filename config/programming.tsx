@@ -1,4 +1,4 @@
-import {SiCodeforces, SiCodechef, SiLeetcode, SiGeeksforgeeks} from "react-icons/si";
+import {SiCodeforces, SiCodechef, SiLeetcode} from "react-icons/si";
 export type Platforms = 'Codeforces'|'Codechef'|'Leetcode'|'GeeksforGeeks'
 
 export type PlatformsDetail = {
@@ -7,7 +7,7 @@ title:string
 rating?:string
 problems:string
 url:string
-icon:any
+icon?:any
 }
 export const Programming: {
   [key in Platforms]: PlatformsDetail
@@ -40,7 +40,6 @@ export const Programming: {
     title:'GeeksforGeeks',
     problems:'Solved more than 150 problems',
     url:'https://geeksforgeeks.org/user/yashagr070403',
-    icon:SiGeeksforgeeks
   },
   
    
