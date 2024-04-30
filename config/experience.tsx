@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Jio' | 'Minemagma'
+export type Company = 'Parishram'| 'Jio' | 'Minemagma'
 
 export type CompanyDetail = {
   name: string
@@ -19,6 +19,31 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
+  Parishram: {
+    name: 'Parishram',
+    longName: 'Parishram Education',
+    subDetail: '',
+    url: 'https://tests.parisharam.com/signin',
+    position: 'Front-end Developer(Part-Time)',
+    duration: 'Dec 2023 - Feb 2024',
+    logo: {
+      light: '/worked_at_logos/Parishram/Parishram_logo.jpg',
+      dark: '/worked_at_logos/Parishram/Parishram_logo.jpg',
+    },
+    roles: [
+      <>
+  Developed a robust test portal using the <b>MERN stack</b>, incorporating MongoDB, Express.js, React.js, and Node.js for scalability and performance.
+      </>,
+      <>
+       Implemented key features like user authentication, interactive dashboards, and categorized tests, enhancing user experience and facilitating efficient test taking
+      </>,
+
+     
+      <> Successfully facilitated over <b>1000 test sessions</b>, demonstrating the platform's scalability and reliability in handling a large user base while ensuring a secure testing environment.       
+      </>,
+     
+    ],
+  },
   Jio: {
     name: 'Jio',
     longName: 'Jio Platforms Limited',
@@ -59,7 +84,7 @@ approximately <b>20%</b> improvement in performance and many more enhancing user
     subDetail: 'A Mining based Consulting firm',
     url: 'https://minemagma.com/',
     position: 'Full Stack Developer Intern',
-    duration: 'Nov 2022 - Jan 2023',
+    duration: 'Sept 2022 - Feb 2023',
     logo: {
       light: '/worked_at_logos/mm/minemagma.png',
       dark: '/worked_at_logos/mm/minemagma.png',
@@ -85,6 +110,7 @@ approximately <b>20%</b> improvement in performance and many more enhancing user
 }
 
 export const ExperiencesList = [
+  Experiences.Parishram,
   Experiences.Jio,
   Experiences.Minemagma,
 ]
